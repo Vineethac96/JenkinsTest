@@ -10,8 +10,7 @@ driver = None
 def init_driver():
     global driver
     print('----------setup------')
-    #driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver = webdriver.Chrome(executable_path="C:/Users/Admin/Downloads/chromedriver_win32.zip/chromedriver.exe")
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.implicitly_wait(5)
     driver.delete_all_cookies()
     driver.get("http://www.google.com")
