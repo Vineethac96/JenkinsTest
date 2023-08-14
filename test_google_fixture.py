@@ -7,7 +7,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 driver = None
 
 def test_gmail():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
+    #driver = webdriver.Chrome(ChromeDriverManager().install())
+    driver = webdriver.Chrome(executable_path="C:/Users/Admin/Downloads/chromedriver_win32.zip/chromedriver.exe")
     driver.implicitly_wait(10)
     driver.get('http://www.gmail.com')
     assert driver.title == "Gmail"
