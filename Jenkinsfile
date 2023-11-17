@@ -21,5 +21,9 @@ pipeline {
         }
         
     }
-
+post{
+    always{
+        emailext body: '', subject: 'Failure', to: 'vineethac96@gmail.com'
+    }
+}
 }
