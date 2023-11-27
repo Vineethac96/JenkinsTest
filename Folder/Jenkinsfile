@@ -5,12 +5,15 @@ agent any
     stages{
       stage("build")
       {
+        steps{
       echo 'Hello'
+        }
       }
       stage("test")
       {
+        steps{
         echo 'Test'
-    
+        }
       }
     }
 
