@@ -19,6 +19,13 @@ pipeline {
                 echo 'Deploy success'
             }
         }
+        stage('Final Done')
+        {
+            steps{
+                echo 'Completed'
+                echo date
+            }
+        }
         
     }
 post{
