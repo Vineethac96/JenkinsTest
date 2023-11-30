@@ -23,7 +23,7 @@ pipeline {
         {
             steps{
                 echo 'Completed'
-                echo date
+                date
             }
         }
         
